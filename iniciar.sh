@@ -20,4 +20,5 @@ curl -X POST \
      -H 'Content-Type: application/json' \
      -d '{"chat_id": "'"$BOT_CHATID"'", "text": "'"$conexion"'", "disable_notification": false}' \
      https://api.telegram.org/bot$BOT_TOKEN/sendMessage
+rm /logs/log.txt
 wait
