@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ngrok_ssh:
+    env_file:
+      - settings.env
+    build: ./
+    restart: always
+    container_name: ngrok_ssh
+    network_mode: "host"
